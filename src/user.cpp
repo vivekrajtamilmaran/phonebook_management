@@ -207,7 +207,12 @@ int User::ToAddGrp(string filename){
 //function to remove group from the directory
 int User::ToRemoveGrp(string filename){
 	filename = "/home/cguser11/phonebook_management/db/" + filename +".txt";
-	remove(filename.c_str());
-	return 1 ;
+	ifstream infile;
+	infile.open(filename);
+	if(infile.is_open()){
+		remove(filename.c_str());
+		return 1;
+	}
+	return 0 ;
 }
 

@@ -1,4 +1,4 @@
-admin:1:marketing:production:testing
+admin:1
 Priyanka Kumari:user2:production:testing
 RAJU ANUSURI:user3:testing
 Dheeraj Kumar Mutukula:user4:production:marketing
